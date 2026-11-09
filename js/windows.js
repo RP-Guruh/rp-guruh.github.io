@@ -555,6 +555,31 @@
     const highlights = Array.isArray(proj.highlights) ? proj.highlights : [];
     const hasValidDemo = proj.demo && !isPlaceholder(proj.demo);
     const hasValidRepo = proj.repo && !isPlaceholder(proj.repo);
+    const images = Array.isArray(proj.images) && proj.images.length > 0
+      ? proj.images
+      : [proj.thumbnail || "assets/icons/project-1.svg"];
+
+    const galleryStripHtml = images.length > 1
+      ? `
+        <div class="project-gallery-strip" aria-label="Galeri Tangkapan Layar">
+          ${images
+            .map(
+              (img, idx) => `
+            <img
+              src="${escapeHtml(img)}"
+              alt="Screenshot ${idx + 1}"
+              class="project-gallery-thumb ${idx === 0 ? "is-active" : ""}"
+              data-switch-hero="${escapeHtml(img)}"
+              tabindex="0"
+              role="button"
+              title="Klik untuk melihat tangkapan layar ${idx + 1}"
+            />
+          `
+            )
+            .join("")}
+        </div>
+      `
+      : "";
 
     return `
       <div class="xp-addressbar">
@@ -566,10 +591,11 @@
       </div>
       <div class="xp-window-body">
         <img
-          src="${escapeHtml(proj.thumbnail || "assets/icons/project-1.svg")}"
+          src="${escapeHtml(images[0])}"
           alt="Pratinjau ${escapeHtml(proj.title)}"
           class="project-detail-hero"
         />
+        ${galleryStripHtml}
         <fieldset class="xp-fieldset">
           <legend class="xp-legend">Informasi Proyek</legend>
           <h3 class="project-detail-title">${formatDummyText(proj.title)}</h3>
@@ -1000,6 +1026,23 @@
         return;
       }
 
+      // Ganti gambar pratinjau pada galeri screenshot proyek
+      const thumb = e.target.closest("[data-switch-hero]");
+      if (thumb) {
+        const newSrc = thumb.getAttribute("data-switch-hero");
+        const heroImg = winEl.querySelector(".project-detail-hero");
+        if (heroImg && newSrc) {
+          heroImg.src = newSrc;
+        }
+        const strip = thumb.closest(".project-gallery-strip");
+        if (strip) {
+          strip.querySelectorAll(".project-gallery-thumb").forEach((t) => {
+            t.classList.toggle("is-active", t === thumb);
+          });
+        }
+        return;
+      }
+
       // Tombol yang membuka menu lain
       const menuTrigger = e.target.closest("[data-open-menu]");
       if (menuTrigger) {
@@ -1022,6 +1065,23 @@
 
     winEl.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
+        const thumb = e.target.closest("[data-switch-hero]");
+        if (thumb) {
+          e.preventDefault();
+          const newSrc = thumb.getAttribute("data-switch-hero");
+          const heroImg = winEl.querySelector(".project-detail-hero");
+          if (heroImg && newSrc) {
+            heroImg.src = newSrc;
+          }
+          const strip = thumb.closest(".project-gallery-strip");
+          if (strip) {
+            strip.querySelectorAll(".project-gallery-thumb").forEach((t) => {
+              t.classList.toggle("is-active", t === thumb);
+            });
+          }
+          return;
+        }
+
         const projCard = e.target.closest("[data-project-index]");
         if (projCard && (e.target === projCard || e.target.closest("[data-project-index]"))) {
           e.preventDefault();

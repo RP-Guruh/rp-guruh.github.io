@@ -103,8 +103,12 @@ const SITE = {
       title: "RAG Studio, Platform AI Multi-Project",
       description:
         "Studio RAG (Retrieval-Augmented Generation) desktop lokal dengan isolasi data per proyek, untuk mengunggah dokumen lalu menanyakannya lewat chatbot.",
-      thumbnail: "assets/icons/project-1.svg",
-      thumbnailNote: "[ISI DI SINI]",
+      thumbnail: "assets/project/multiple_rag/gambar1.png",
+      images: [
+        "assets/project/multiple_rag/gambar1.png",
+        "assets/project/multiple_rag/gambar2.png",
+        "assets/project/multiple_rag/gambar3.png"
+      ],
       tech: [
         "Java 21/25",
         "Spring Boot 4",
@@ -130,8 +134,10 @@ const SITE = {
       title: "9Router CLI (Spring Shell AI)",
       description:
         "CLI interaktif berbasis Spring Shell untuk chat dengan model AI langsung dari terminal. Kompatibel dengan OpenAI API, 9Router, Ollama, vLLM, dan sejenisnya.",
-      thumbnail: "assets/icons/project-4.svg",
-      thumbnailNote: "[ISI DI SINI]",
+      thumbnail: "assets/project/shell_ai/gambar_1.png",
+      images: [
+        "assets/project/shell_ai/gambar_1.png"
+      ],
       tech: [
         "Java 21",
         "Spring Boot",
