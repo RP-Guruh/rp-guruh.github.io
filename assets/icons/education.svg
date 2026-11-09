@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bookCover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="drop" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="2" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#drop)">
+    <!-- Book bottom -->
+    <path d="M10 38 L34 48 L56 38 L56 45 L34 55 L10 45 Z" fill="url(#bookCover)" stroke="#7f1d1d" stroke-width="1.5"/>
+    <path d="M12 37 L34 46 L54 37 L54 42 L34 51 L12 42 Z" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+    <path d="M10 34 L34 44 L56 34 L34 25 Z" fill="#dc2626" stroke="#7f1d1d" stroke-width="1.5"/>
+    <!-- Graduation Cap -->
+    <path d="M20 24 L20 33 C20 37 44 37 44 33 L44 24 Z" fill="#1e293b" stroke="#0f172a" stroke-width="1.5"/>
+    <polygon points="32,10 58,21 32,32 6,21" fill="url(#capGrad)" stroke="#475569" stroke-width="1.5"/>
+    <!-- Gold Tassel -->
+    <circle cx="32" cy="21" r="2.5" fill="#fbbf24"/>
+    <path d="M32 21 L48 26 L48 38" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="48" cy="39" r="3" fill="#fbbf24" stroke="#b45309" stroke-width="1"/>
+  </g>
+</svg>
+

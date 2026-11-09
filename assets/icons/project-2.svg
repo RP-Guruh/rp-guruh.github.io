@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#2b579a"/>
+  <!-- Browser Window XP -->
+  <rect x="16" y="14" width="288" height="172" rx="4" fill="#ece9d8" stroke="#0055ea" stroke-width="2"/>
+  <rect x="16" y="14" width="288" height="22" rx="3" fill="#0055ea"/>
+  <text x="26" y="29" font-family="Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Susut.ink - Pemendek Tautan</text>
+  <rect x="284" y="17" width="15" height="15" rx="2" fill="#e0432e" stroke="#ffffff" stroke-width="1"/>
+  <!-- Address bar -->
+  <rect x="22" y="40" width="276" height="18" fill="#ffffff" stroke="#7f9db9"/>
+  <text x="28" y="52" font-family="Tahoma, sans-serif" font-size="9" fill="#003399">http://susut.ink/</text>
+  <!-- Web Canvas -->
+  <rect x="22" y="62" width="276" height="116" fill="#ffffff" stroke="#aca899"/>
+  <text x="160" y="90" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="15" font-weight="bold" fill="#003399">susut.ink</text>
+  <rect x="46" y="102" width="168" height="24" fill="#ffffff" stroke="#7f9db9"/>
+  <text x="54" y="117" font-family="Lucida Console, monospace" font-size="9" fill="#666666">https://contoh-url-panjang.id/...</text>
+  <rect x="218" y="102" width="56" height="24" rx="2" fill="#378e3b" stroke="#1c581f"/>
+  <text x="246" y="117" text-anchor="middle" font-family="Tahoma, sans-serif" font-size="9" font-weight="bold" fill="#ffffff">Perpendek</text>
+  <rect x="46" y="136" width="228" height="26" fill="#f3f8f2" stroke="#85c788"/>
+  <text x="160" y="153" text-anchor="middle" font-family="Lucida Console, monospace" font-size="10" font-weight="bold" fill="#1c581f">susut.ink/kmp24  [Gofiber + SQLite]</text>
+</svg>

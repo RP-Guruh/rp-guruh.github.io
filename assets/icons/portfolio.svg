@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="folderBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="folderFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="drop" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="2" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#drop)">
+    <!-- Back tab -->
+    <path d="M6 14 C6 11.5 8 10 10.5 10 L24 10 L29 16 L54 16 C56.5 16 58 18 58 20.5 L58 50 L6 50 Z" fill="url(#folderBack)" stroke="#a16207" stroke-width="1.8"/>
+    <!-- Picture card sticking out -->
+    <g transform="rotate(-6 34 28)">
+      <rect x="18" y="12" width="32" height="26" rx="2" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="21" y="15" width="26" height="18" fill="#38bdf8"/>
+      <circle cx="27" cy="20" r="3" fill="#fde047"/>
+      <path d="M21 33 L29 24 L36 30 L41 26 L47 33 Z" fill="#22c55e"/>
+    </g>
+    <!-- Front Folder -->
+    <path d="M6 26 L58 26 L55 52 C54.7 54 53 55 51 55 L11 55 C9 55 7.3 54 7 52 Z" fill="url(#folderFront)" stroke="#a16207" stroke-width="1.8" stroke-linejoin="round"/>
+  </g>
+</svg>
+

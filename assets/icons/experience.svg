@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bagBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="bagFlap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="drop" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="2" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#drop)">
+    <!-- Handle -->
+    <path d="M24 19 L24 13 C24 10.5 26 9 28.5 9 L35.5 9 C38 9 40 10.5 40 13 L40 19" fill="none" stroke="#78350f" stroke-width="4" stroke-linecap="round"/>
+    <!-- Main Case -->
+    <rect x="7" y="18" width="50" height="36" rx="5" fill="url(#bagBody)" stroke="#451a03" stroke-width="2"/>
+    <!-- Upper Flap -->
+    <path d="M7 22 C7 19.5 9 18 11.5 18 L52.5 18 C55 18 57 19.5 57 22 L57 32 C57 35 45 36 32 36 C19 36 7 35 7 32 Z" fill="url(#bagFlap)" stroke="#78350f" stroke-width="1.5"/>
+    <!-- Gold Buckles -->
+    <rect x="17" y="31" width="6" height="9" rx="1.5" fill="#fde047" stroke="#a16207" stroke-width="1.2"/>
+    <rect x="41" y="31" width="6" height="9" rx="1.5" fill="#fde047" stroke="#a16207" stroke-width="1.2"/>
+    <!-- Center Lock -->
+    <rect x="29" y="32" width="6" height="6" rx="1" fill="#fef08a" stroke="#a16207" stroke-width="1.2"/>
+  </g>
+</svg>
+

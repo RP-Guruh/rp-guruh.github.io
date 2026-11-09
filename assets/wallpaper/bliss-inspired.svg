@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="68%">
+      <stop offset="0%" stop-color="#1b5fd9"/>
+      <stop offset="38%" stop-color="#4288eb"/>
+      <stop offset="72%" stop-color="#7eb7f7"/>
+      <stop offset="100%" stop-color="#cce5ff"/>
+    </linearGradient>
+    <linearGradient id="farHill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5da844"/>
+      <stop offset="60%" stop-color="#458d30"/>
+      <stop offset="100%" stop-color="#317020"/>
+    </linearGradient>
+    <linearGradient id="midHill" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#87cf45"/>
+      <stop offset="45%" stop-color="#62b32f"/>
+      <stop offset="100%" stop-color="#3c821b"/>
+    </linearGradient>
+    <linearGradient id="frontHill" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#9be04e"/>
+      <stop offset="50%" stop-color="#69ba2c"/>
+      <stop offset="100%" stop-color="#3a7c14"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="78%" cy="22%" r="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#d8edff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7eb7f7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cloudBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+  <rect width="1920" height="1080" fill="url(#sunGlow)"/>
+
+  <!-- Distant atmospheric haze -->
+  <path d="M0 640 Q 450 560 950 610 T 1920 570 L 1920 800 L 0 800 Z" fill="#9bc5e8" opacity="0.45"/>
+
+  <!-- Soft Fluffy Clouds -->
+  <g fill="#ffffff" opacity="0.88" filter="url(#cloudBlur)">
+    <ellipse cx="320" cy="240" rx="150" ry="48"/>
+    <ellipse cx="260" cy="220" rx="95" ry="55"/>
+    <ellipse cx="390" cy="225" rx="110" ry="45"/>
+    <ellipse cx="330" cy="195" rx="80" ry="45"/>
+
+    <ellipse cx="890" cy="310" rx="190" ry="52"/>
+    <ellipse cx="810" cy="285" rx="115" ry="56"/>
+    <ellipse cx="960" cy="280" rx="130" ry="58"/>
+    <ellipse cx="890" cy="250" rx="95" ry="50"/>
+
+    <ellipse cx="1480" cy="210" rx="220" ry="60"/>
+    <ellipse cx="1390" cy="180" rx="130" ry="64"/>
+    <ellipse cx="1550" cy="175" rx="140" ry="58"/>
+    <ellipse cx="1475" cy="145" rx="105" ry="52"/>
+
+    <ellipse cx="1220" cy="430" rx="160" ry="36" opacity="0.65"/>
+    <ellipse cx="520" cy="410" rx="180" ry="38" opacity="0.6"/>
+  </g>
+
+  <!-- Crisp Cloud Highlights -->
+  <g fill="#ffffff" opacity="0.65">
+    <ellipse cx="315" cy="205" rx="72" ry="34"/>
+    <ellipse cx="885" cy="260" rx="88" ry="38"/>
+    <ellipse cx="1470" cy="155" rx="92" ry="40"/>
+  </g>
+
+  <!-- Far Right Rolling Hill -->
+  <path d="M 650 720 C 980 540, 1420 510, 1920 600 L 1920 1080 L 650 1080 Z" fill="url(#farHill)"/>
+
+  <!-- Middle Sweep Hill -->
+  <path d="M -50 620 C 380 510, 880 575, 1460 730 C 1660 780, 1820 800, 1950 810 L 1950 1080 L -50 1080 Z" fill="url(#midHill)"/>
+
+  <!-- Subtle Meadow Light Lines -->
+  <path d="M 0 650 C 420 545, 860 610, 1420 755 L 1420 770 C 860 630, 420 565, 0 675 Z" fill="#b4ee66" opacity="0.28"/>
+
+  <!-- Foreground Hill -->
+  <path d="M -60 770 C 340 730, 740 650, 1280 730 C 1590 775, 1790 830, 1960 880 L 1960 1080 L -60 1080 Z" fill="url(#frontHill)"/>
+
+  <!-- Foreground Meadow Ridge Highlight -->
+  <path d="M -60 770 C 340 730, 740 650, 1280 730 C 1590 775, 1790 830, 1960 880 L 1960 895 C 1790 845, 1590 790, 1280 745 C 740 665, 340 745, -60 785 Z" fill="#c7f677" opacity="0.35"/>
+</svg>
+

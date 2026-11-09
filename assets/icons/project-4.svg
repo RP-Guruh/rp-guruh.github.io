@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#1f3a60"/>
+  <!-- XP Command Prompt Window -->
+  <rect x="16" y="14" width="288" height="172" rx="4" fill="#ece9d8" stroke="#0055ea" stroke-width="2"/>
+  <rect x="16" y="14" width="288" height="22" rx="3" fill="#0055ea"/>
+  <rect x="22" y="18" width="14" height="12" fill="#000000" stroke="#ffffff" stroke-width="1"/>
+  <text x="24" y="27" font-family="Lucida Console, monospace" font-size="7" fill="#c0c0c0">C:\</text>
+  <text x="42" y="29" font-family="Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">9Router CLI - Spring Shell AI</text>
+  <rect x="284" y="17" width="15" height="15" rx="2" fill="#e0432e" stroke="#ffffff" stroke-width="1"/>
+  <!-- Black Console Area -->
+  <rect x="22" y="40" width="276" height="138" fill="#000000" stroke="#716f64" stroke-width="2"/>
+  <text x="30" y="58" font-family="Lucida Console, monospace" font-size="9.5" fill="#c0c0c0">Spring Shell AI (Java 21 + pgvector)</text>
+  <text x="30" y="76" font-family="Lucida Console, monospace" font-size="9.5" fill="#55ff55">ai-shell:&gt; chat @arsitektur.png</text>
+  <text x="30" y="96" font-family="Lucida Console, monospace" font-size="9" fill="#55ffff">[Vision] Menganalisis diagram sistem...</text>
+  <text x="30" y="114" font-family="Lucida Console, monospace" font-size="9" fill="#ffff55">[Tool] writeFile: Setujui eksekusi? (y/n): y</text>
+  <text x="30" y="134" font-family="Lucida Console, monospace" font-size="9" fill="#c0c0c0">Memori semantik tersimpan (bge-m3 1024d).</text>
+  <text x="30" y="156" font-family="Lucida Console, monospace" font-size="9.5" fill="#55ff55">ai-shell:&gt; /search riwayat_</text>
+</svg>

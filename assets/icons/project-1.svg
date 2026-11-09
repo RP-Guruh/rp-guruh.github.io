@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#3a6ea5"/>
+  <!-- XP Window Frame -->
+  <rect x="16" y="14" width="288" height="172" rx="4" fill="#ece9d8" stroke="#0055ea" stroke-width="2"/>
+  <rect x="16" y="14" width="288" height="22" rx="3" fill="#0055ea"/>
+  <text x="26" y="29" font-family="Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">RAG Studio - Multi-Project Knowledge Base</text>
+  <rect x="284" y="17" width="15" height="15" rx="2" fill="#e0432e" stroke="#ffffff" stroke-width="1"/>
+  <!-- Left sidebar (Projects) -->
+  <rect x="24" y="44" width="76" height="132" fill="#ffffff" stroke="#7f9db9"/>
+  <rect x="28" y="50" width="68" height="14" fill="#316ac5"/>
+  <text x="32" y="60" font-family="Tahoma, sans-serif" font-size="8" fill="#ffffff">Project_Legal.pdf</text>
+  <rect x="28" y="68" width="68" height="12" fill="#f1efe2"/>
+  <rect x="28" y="84" width="68" height="12" fill="#f1efe2"/>
+  <text x="32" y="112" font-family="Tahoma, sans-serif" font-size="8" font-weight="bold" fill="#003399">pgvector HNSW</text>
+  <rect x="28" y="118" width="68" height="8" fill="#d6dff7"/>
+  <rect x="28" y="118" width="52" height="8" fill="#27c23a"/>
+  <!-- Right Chat & RAG Context pane -->
+  <rect x="106" y="44" width="190" height="104" fill="#ffffff" stroke="#7f9db9"/>
+  <rect x="114" y="52" width="140" height="22" rx="2" fill="#edf2fb" stroke="#7ba2e7"/>
+  <text x="120" y="66" font-family="Tahoma, sans-serif" font-size="8.5" fill="#003399">Dokumen PDF + OCR terindeks (1.024 dim)</text>
+  <rect x="136" y="82" width="152" height="26" rx="2" fill="#f9f8f2" stroke="#aca899"/>
+  <text x="142" y="98" font-family="Tahoma, sans-serif" font-size="8.5" fill="#222222">Jawaban berbasis konteks dokumen...</text>
+  <!-- Input bar -->
+  <rect x="106" y="154" width="144" height="22" fill="#ffffff" stroke="#7f9db9"/>
+  <rect x="254" y="154" width="42" height="22" rx="2" fill="#f5f4ea" stroke="#003c74"/>
+  <text x="275" y="168" text-anchor="middle" font-family="Tahoma, sans-serif" font-size="8.5" fill="#000000">Tanya</text>
+</svg>

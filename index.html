@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guruh Rachmat Pribadi — Web Programmer | Portofolio &amp; CV Windows XP</title>
+  <meta name="description"
+    content="Portofolio dan Curriculum Vitae (CV) Guruh Rachmat Pribadi — Web Programmer (Pengembang Aplikasi Web dan Desktop) bergaya desktop interaktif Windows XP." />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Guruh Rachmat Pribadi — Web Programmer | Portofolio &amp; CV Windows XP" />
+  <meta property="og:description"
+    content="Pengembang aplikasi web (Laravel, Ruby on Rails, Golang) dan desktop (Qt Python, Slint Rust, JavaFX). Jelajahi CV dan portofolio proyek melalui desktop Windows XP." />
+  <meta property="og:image" content="assets/wallpaper/bliss-inspired.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/portfolio.svg" />
+  <link rel="stylesheet" href="css/xp.css" />
+  <link rel="stylesheet" href="css/desktop.css" />
+  <link rel="stylesheet" href="css/window.css" />
+</head>
+
+<body>
+  <!-- Layar Boot Windows XP (Dikontrol oleh SITE.config.bootScreen di js/data.js) -->
+  <div id="boot-screen" role="status" aria-live="polite" aria-label="Memuat Desktop Portofolio">
+    <div class="boot-box">
+      <div class="boot-flag" aria-hidden="true">
+        <span class="f1"></span>
+        <span class="f2"></span>
+        <span class="f3"></span>
+        <span class="f4"></span>
+      </div>
+      <h1 class="boot-title">Portofolio<sup>XP</sup></h1>
+      <p class="boot-subtitle">Guruh Rachmat Pribadi • Web &amp; Desktop Developer</p>
+      <div class="boot-progress-track" aria-hidden="true">
+        <div class="boot-progress-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Layar Desktop Utama Windows XP -->
+  <main id="desktop-screen" aria-label="Desktop Windows XP Portofolio">
+    <!-- Area Kerja Desktop (Ikon & Jendela Popup) -->
+    <div id="desktop-workspace">
+      <!-- 5 Ikon Desktop Utama (Dirender dinamis oleh js/desktop.js) -->
+      <ul id="desktop-icons" aria-label="Menu Desktop CV dan Portofolio"></ul>
+
+      <!-- Kotak Seleksi Drag (Rubber-band Marquee) Desktop XP -->
+      <div id="desktop-selection-box" hidden aria-hidden="true"></div>
+
+      <!-- Layer Tempat Jendela Popup Dirender -->
+      <div id="windows-layer" aria-live="polite"></div>
+
+      <!-- Menu Konteks Klik Kanan Desktop XP -->
+      <div id="desktop-context-menu" role="menu" aria-label="Menu Konteks Desktop" hidden>
+        <button type="button" class="xp-ctx-item" data-ctx-action="open-portfolio" role="menuitem">
+          <strong>Jelajahi Portofolio Proyek...</strong>
+        </button>
+        <button type="button" class="xp-ctx-item" data-ctx-action="open-profile" role="menuitem">
+          Buka Data Diri
+        </button>
+        <div class="xp-ctx-sep" role="separator"></div>
+        <button type="button" class="xp-ctx-item" data-ctx-action="refresh" role="menuitem">
+          Segarkan Desktop (Refresh)
+        </button>
+        <button type="button" class="xp-ctx-item" data-ctx-action="open-all" role="menuitem">
+          Buka Kelima Jendela Utama
+        </button>
+        <div class="xp-ctx-sep" role="separator"></div>
+        <button type="button" class="xp-ctx-item" data-ctx-action="simple-mode" role="menuitem">
+          Tampilan Versi Sederhana (CV Teks)
+        </button>
+        <div class="xp-ctx-sep" role="separator"></div>
+        <button type="button" class="xp-ctx-item" data-ctx-action="properties" role="menuitem">
+          Properti Sistem...
+        </button>
+      </div>
+    </div>
+
+    <!-- Start Menu Windows XP -->
+    <nav id="start-menu" aria-label="Start Menu" hidden>
+      <div class="start-menu-header">
+        <img id="start-user-avatar" src="assets/photo.jpg" alt="Avatar Guruh Rachmat Pribadi"
+          class="start-user-avatar" />
+        <div class="start-user-info">
+          <div id="start-user-name" class="start-user-name">Guruh Rachmat Pribadi</div>
+          <div id="start-user-role" class="start-user-role">Web Programmer</div>
+        </div>
+      </div>
+
+      <div class="start-menu-body">
+        <!-- Kolom Kiri: 5 Menu Utama -->
+        <div class="start-col-left" role="menu" aria-label="Menu Utama CV">
+          <div id="start-menu-left-items"></div>
+        </div>
+
+        <!-- Kolom Kanan: Dokumen & Pintasan -->
+        <div class="start-col-right" aria-label="Tautan Cepat dan Dokumen">
+          <a id="start-download-cv" href="cv.pdf" download class="start-menu-item">
+            <img src="assets/icons/pdf.svg" alt="" class="start-item-icon" />
+            <span class="start-item-text">
+              <span class="start-item-title">Download CV (PDF)</span>
+              <span class="start-item-sub">Unduh berkas CV resmi</span>
+            </span>
+          </a>
+
+          <div class="start-divider" role="separator"></div>
+
+          <button type="button" class="start-menu-item" data-quick-open="portfolio">
+            <img src="assets/icons/portfolio.svg" alt="" class="start-item-icon" />
+            <span class="start-item-text">
+              <span class="start-item-title">My Pictures / Proyek</span>
+              <span class="start-item-sub">Windows Explorer</span>
+            </span>
+          </button>
+
+          <button type="button" class="start-menu-item" data-quick-open="contact">
+            <img src="assets/icons/contact.svg" alt="" class="start-item-icon" />
+            <span class="start-item-text">
+              <span class="start-item-title">Hubungi Saya</span>
+              <span class="start-item-sub">Email, WhatsApp, GitHub</span>
+            </span>
+          </button>
+
+          <div class="start-divider" role="separator"></div>
+
+
+        </div>
+      </div>
+
+      <div class="start-menu-footer">
+        <button type="button" id="start-shutdown-btn" class="start-footer-btn"
+          aria-label="Shut Down atau Matikan Komputer">
+          <img src="assets/icons/shutdown.svg" alt="" />
+          <span>Shut Down...</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Taskbar Bawah Windows XP -->
+    <footer id="taskbar" aria-label="Taskbar">
+      <button type="button" id="start-button" aria-haspopup="true" aria-expanded="false" aria-controls="start-menu">
+        <span class="start-flag" aria-hidden="true">
+          <span class="f1"></span>
+          <span class="f2"></span>
+          <span class="f3"></span>
+          <span class="f4"></span>
+        </span>
+        <span>start</span>
+      </button>
+
+      <!-- Tombol Jendela Terbuka di Tengah -->
+      <div id="taskbar-windows" role="toolbar" aria-label="Jendela yang sedang terbuka"></div>
+
+      <!-- System Tray & Jam Pengunjung di Kanan -->
+      <div id="system-tray" aria-label="System Tray">
+
+        <button type="button" id="tray-sound-btn" class="tray-icon-btn" aria-label="Pengaturan Suara"
+          title="Suara: Nonaktif">
+          <img id="tray-sound-icon" src="assets/icons/volume-off.svg" alt="" />
+        </button>
+        <time id="taskbar-clock" aria-live="off">00:00</time>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Layar Shut Down -->
+  <section id="shutdown-screen" role="dialog" aria-modal="true" aria-labelledby="shutdown-title" hidden>
+    <div class="shutdown-card">
+      <img src="assets/icons/shutdown.svg" alt="" class="shutdown-icon" />
+      <h2 id="shutdown-title">Komputer telah dimatikan</h2>
+      <p>
+        Terima kasih telah mengunjungi desktop portofolio &amp; CV Guruh Rachmat Pribadi.
+        Anda dapat menyalakan kembali layar kapan saja.
+      </p>
+      <div class="shutdown-actions">
+        <button type="button" id="restart-computer-btn" class="xp-btn xp-btn-primary">
+          Nyalakan kembali
+        </button>
+        <a href="cv.pdf" download class="xp-btn">
+          <img src="assets/icons/pdf.svg" alt="" class="xp-btn-icon" />
+          Download CV (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Konten Fallback Tersembunyi untuk Screen Reader & Mesin Pencari (Diisi dari js/data.js) -->
+  <div id="seo-accessible-cv" class="sr-seo-fallback" aria-hidden="false"></div>
+
+  <!-- Fallback Noscript bila JavaScript dinonaktifkan di peramban -->
+  <noscript>
+    <div
+      style="padding: 24px; max-width: 800px; margin: 0 auto; background: #fff; color: #111; font-family: sans-serif;">
+      <h1>Guruh Rachmat Pribadi — Web Programmer (Pengembang Aplikasi Web dan Desktop)</h1>
+      <p>
+        Pengembang aplikasi web dan desktop dengan pengalaman menggunakan Laravel, Ruby on Rails, Qt (Python), dan Slint
+        (Rust).
+        Domisili: Cipayung, Kota Depok. Email: <a href="mailto:github.guruh@gmail.com">github.guruh@gmail.com</a> |
+        GitHub: <a href="https://github.com/RP-Guruh">https://github.com/RP-Guruh</a> |
+        LinkedIn: <a
+          href="https://www.linkedin.com/in/guruh-rachmat-pribadi">https://www.linkedin.com/in/guruh-rachmat-pribadi</a>.
+      </p>
+      <p><a href="cv.pdf" download>Download CV (PDF)</a></p>
+    </div>
+  </noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/windows.js"></script>
+  <script src="js/desktop.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#4a6b82"/>
+  <!-- Qt Desktop Window -->
+  <rect x="16" y="14" width="288" height="172" rx="4" fill="#ece9d8" stroke="#0055ea" stroke-width="2"/>
+  <rect x="16" y="14" width="288" height="22" rx="3" fill="#0055ea"/>
+  <text x="26" y="29" font-family="Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Lead Generator - Qt Python Scraper</text>
+  <rect x="284" y="17" width="15" height="15" rx="2" fill="#e0432e" stroke="#ffffff" stroke-width="1"/>
+  <!-- Search & Export Toolbar -->
+  <rect x="24" y="42" width="182" height="20" fill="#ffffff" stroke="#7f9db9"/>
+  <text x="30" y="55" font-family="Tahoma, sans-serif" font-size="8.5" fill="#333333">Kata kunci: Kedai Kopi, Depok</text>
+  <rect x="212" y="42" width="84" height="20" rx="2" fill="#f5f4ea" stroke="#003c74"/>
+  <text x="254" y="55" text-anchor="middle" font-family="Tahoma, sans-serif" font-size="8.5" font-weight="bold" fill="#1c581f">Export .xlsx</text>
+  <!-- Data Table -->
+  <rect x="24" y="68" width="272" height="108" fill="#ffffff" stroke="#7f9db9"/>
+  <rect x="25" y="69" width="270" height="16" fill="#d6d2c2"/>
+  <text x="32" y="80" font-family="Tahoma, sans-serif" font-size="8" font-weight="bold" fill="#000000">Nama Usaha</text>
+  <text x="135" y="80" font-family="Tahoma, sans-serif" font-size="8" font-weight="bold" fill="#000000">Lokasi Maps</text>
+  <text x="230" y="80" font-family="Tahoma, sans-serif" font-size="8" font-weight="bold" fill="#000000">Kontak / IG</text>
+  <line x1="24" y1="102" x2="296" y2="102" stroke="#ece9d8"/>
+  <line x1="24" y1="120" x2="296" y2="120" stroke="#ece9d8"/>
+  <line x1="24" y1="138" x2="296" y2="138" stroke="#ece9d8"/>
+  <rect x="25" y="103" width="270" height="16" fill="#316ac5"/>
+  <text x="32" y="114" font-family="Tahoma, sans-serif" font-size="8" fill="#ffffff">Kopi Nusantara</text>
+  <text x="135" y="114" font-family="Tahoma, sans-serif" font-size="8" fill="#ffffff">Cipayung, Depok</text>
+  <text x="230" y="114" font-family="Tahoma, sans-serif" font-size="8" fill="#ffffff">0812-xxxx</text>
+</svg>
