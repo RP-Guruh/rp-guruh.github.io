@@ -474,16 +474,7 @@
             Kontak
           </button>
         </div>
-        <div class="explorer-toolbar-sep"></div>
-        <div class="explorer-toolbar-group">
-          <span style="font-size:10.5px; color:#4a4942;">Tampilan:</span>
-          <button type="button" class="xp-btn is-pressed" data-view-mode="cards" title="Tampilan Kartu">
-            Kartu
-          </button>
-          <button type="button" class="xp-btn" data-view-mode="details" title="Tampilan Tabel Rincian">
-            Rincian
-          </button>
-        </div>
+       
       </div>
       <div class="xp-addressbar">
         <span class="xp-address-label">Alamat</span>
