@@ -57,7 +57,7 @@
         <span class="simple-cv-topbar-title">Curriculum Vitae — ${escapeHtml(p.name)}</span>
         <div class="simple-cv-topbar-actions">
           <button type="button" id="exit-simple-cv-btn" class="xp-btn xp-btn-primary">
-            🗔 Kembali ke Desktop Windows XP
+            🗔 Kembali ke Desktop Guruh RP
           </button>
           <button type="button" onclick="window.print()" class="xp-btn">
             🖶 Cetak Halaman
@@ -213,7 +213,7 @@
     if (p.name) {
       const cleanName = String(p.name).replace(/\[ISI DI SINI:\s*|\]/g, "");
       const cleanRole = p.role ? String(p.role).replace(/\[ISI DI SINI:\s*|\]/g, "") : "Portofolio & CV";
-      const pageTitle = `${cleanName} — ${cleanRole} | Portofolio & CV Windows XP`;
+      const pageTitle = `Guruh RP — ${cleanRole} | Portofolio & CV`;
       document.title = pageTitle;
 
       const metaDesc = document.querySelector('meta[name="description"]');
@@ -239,7 +239,7 @@
   }
 
   /**
-   * Mengelola layar boot Windows XP berdasarkan flag SITE.config.bootScreen
+   * Mengelola layar boot Guruh RP berdasarkan flag SITE.config.bootScreen
    */
   function handleBootScreen() {
     const bootEl = document.getElementById("boot-screen");

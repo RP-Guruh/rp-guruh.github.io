@@ -261,7 +261,7 @@
   display: none;
 }
 
-/* Windows XP Classic Tab Control (sysdm.cpl) */
+/* Tab Control klasik ala desktop sistem (sysdm.cpl) */
 .xp-tabs-bar {
   display: flex;
   align-items: flex-end;
@@ -749,6 +749,11 @@
   margin-top: auto;
 }
 
+.project-detail-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-detail-hero {
   width: 100%;
   max-height: 250px;
@@ -759,6 +764,21 @@
   display: block;
 }
 
+/* Saat jendela dimaksimalkan (atau fullscreen di mobile), gambar membesar mengikuti layar */
+.xp-window.is-maximized .project-detail-hero {
+  height: 65vh;
+  max-height: none;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 767px) {
+  .project-detail-hero {
+    height: 55vh;
+    max-height: none;
+    flex: 0 0 auto;
+  }
+}
+
 .project-gallery-strip {
   display: flex;
   gap: 6px;
@@ -767,6 +787,7 @@
   background: var(--xp-surface-dark);
   border: 1px solid var(--xp-field-border);
   overflow-x: auto;
+  flex-shrink: 0;
 }
 
 .project-gallery-thumb {

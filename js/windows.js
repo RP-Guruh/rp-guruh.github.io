@@ -1,6 +1,6 @@
 /**
  * js/windows.js
- * Sistem manajemen jendela Windows XP (buka, tutup, drag, z-index, minimize, maximize)
+ * Sistem manajemen jendela desktop Guruh RP (buka, tutup, drag, z-index, minimize, maximize)
  * serta perender konten dinamis dari js/data.js untuk 5 menu utama dan jendela detail proyek.
  */
 
@@ -589,7 +589,7 @@
           <span>C:\\Portofolio\\Proyek-${index + 1}\\${escapeHtml(proj.title)}</span>
         </div>
       </div>
-      <div class="xp-window-body">
+      <div class="xp-window-body project-detail-body">
         <img
           src="${escapeHtml(images[0])}"
           alt="Pratinjau ${escapeHtml(proj.title)}"
@@ -979,7 +979,7 @@
         return;
       }
 
-      // Tab navigasi Windows XP (mis. pada jendela Data Diri / sysdm.cpl)
+      // Tab navigasi ala desktop klasik (mis. pada jendela Data Diri / sysdm.cpl)
       const tabBtn = e.target.closest("[data-tab-target]");
       if (tabBtn) {
         const targetId = tabBtn.getAttribute("data-tab-target");

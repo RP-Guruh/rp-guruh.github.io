@@ -103,11 +103,14 @@ const SITE = {
       title: "RAG Studio, Platform AI Multi-Project",
       description:
         "Studio RAG (Retrieval-Augmented Generation) desktop lokal dengan isolasi data per proyek, untuk mengunggah dokumen lalu menanyakannya lewat chatbot.",
-      thumbnail: "assets/project/multiple_rag/gambar1.png",
+      thumbnail: "assets/project/rag-studio/02-ragstudio-project.png",
       images: [
-        "assets/project/multiple_rag/gambar1.png",
-        "assets/project/multiple_rag/gambar2.png",
-        "assets/project/multiple_rag/gambar3.png"
+        "assets/project/rag-studio/02-ragstudio-project.png",
+        "assets/project/rag-studio/03-ragstudio-detail-project.png",
+        "assets/project/rag-studio/05-ragstudio-playground.png",
+        "assets/project/rag-studio/04-ragstudio-setting-persona.png",
+        "assets/project/rag-studio/06-ragstudio-settings.png",
+        "assets/project/rag-studio/01-ragstudio-login.png"
       ],
       tech: [
         "Java 21/25",
@@ -120,7 +123,7 @@ const SITE = {
         "Ollama"
       ],
       demo: "",
-      repo: "https://github.com/RP-Guruh/multiple-rag-project",
+      repo: "https://github.com/RP-Guruh/rag-studio",
       highlights: [
         "Ingesti dokumen PDF, Word, Excel, dan teks, dengan OCR berbasis vision untuk PDF hasil scan.",
         "Pemecahan teks (chunking) rekursif, embedding vektor dengan fallback otomatis ke Ollama lokal.",

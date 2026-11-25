@@ -142,7 +142,7 @@ Tampilkan sebagai grid ala Windows Explorer. Klik proyek membuka jendela detail.
   - Pencarian hybrid: kemiripan vektor (HNSW cosine) dikombinasikan dengan pencocokan kata kunci
   - Isolasi pengetahuan ketat per proyek dan jawaban hanya berdasarkan konteks dokumen
   - Antarmuka desktop modern dengan dashboard, unggah drag-and-drop, dan playground chatbot
-- **Repo**: https://github.com/RP-Guruh/multiple-rag-project
+- **Repo**: https://github.com/RP-Guruh/rag-studio
 
 ---
 
