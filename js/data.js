@@ -103,14 +103,14 @@ const SITE = {
       title: "RAG Studio, Platform AI Multi-Project",
       description:
         "Aplikasi desktop untuk menyiapkan project RAG. Setiap project menyimpan dokumen dan persona sendiri, sehingga knowledge base antarproject tidak tercampur. Pengaturan chat model, embedding model, PostgreSQL, dan Docling tersedia di Settings; Playground dipakai untuk menguji apakah jawaban model sudah sesuai dengan knowledge base project.",
-      thumbnail: "assets/project/rag-studio/02-ragstudio-project.png?v=3",
+      thumbnail: "assets/project/rag-studio/02-ragstudio-project.png?v=4",
       images: [
-        "assets/project/rag-studio/02-ragstudio-project.png?v=3",
-        "assets/project/rag-studio/03-ragstudio-detail-project.png?v=3",
-        "assets/project/rag-studio/05-ragstudio-playground.png?v=3",
-        "assets/project/rag-studio/04-ragstudio-setting-persona.png?v=3",
-        "assets/project/rag-studio/06-ragstudio-settings.png?v=3",
-        "assets/project/rag-studio/01-ragstudio-login.png?v=3"
+        "assets/project/rag-studio/02-ragstudio-project.png?v=4",
+        "assets/project/rag-studio/03-ragstudio-detail-project.png?v=4",
+        "assets/project/rag-studio/05-ragstudio-playground.png?v=4",
+        "assets/project/rag-studio/04-ragstudio-setting-persona.png?v=4",
+        "assets/project/rag-studio/06-ragstudio-settings.png?v=4",
+        "assets/project/rag-studio/01-ragstudio-login.png?v=4"
       ],
       tech: [
         "Go 1.26",
