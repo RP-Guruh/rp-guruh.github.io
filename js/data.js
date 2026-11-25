@@ -102,7 +102,7 @@ const SITE = {
       id: "rag-studio",
       title: "RAG Studio, Platform AI Multi-Project",
       description:
-        "Studio RAG (Retrieval-Augmented Generation) desktop lokal dengan isolasi data per proyek, untuk mengunggah dokumen lalu menanyakannya lewat chatbot.",
+        "Aplikasi desktop untuk menyiapkan project RAG. Setiap project menyimpan dokumen dan persona sendiri, sehingga knowledge base antarproject tidak tercampur. Pengaturan chat model, embedding model, PostgreSQL, dan Docling tersedia di Settings; Playground dipakai untuk menguji apakah jawaban model sudah sesuai dengan knowledge base project.",
       thumbnail: "assets/project/rag-studio/02-ragstudio-project.png",
       images: [
         "assets/project/rag-studio/02-ragstudio-project.png",
@@ -113,23 +113,27 @@ const SITE = {
         "assets/project/rag-studio/01-ragstudio-login.png"
       ],
       tech: [
-        "Java 21/25",
-        "Spring Boot 4",
-        "JavaFX 23",
+        "Go 1.26",
+        "Wails v3",
+        "Vue 3 + TypeScript",
+        "Vite",
         "PostgreSQL + pgvector",
         "SQLite",
-        "Apache PDFBox",
-        "Apache POI",
-        "Ollama"
+        "Docling",
+        "Docker Compose",
+        "Ollama / OpenAI-compatible / Anthropic / HuggingFace"
       ],
       demo: "",
       repo: "https://github.com/RP-Guruh/rag-studio",
       highlights: [
-        "Ingesti dokumen PDF, Word, Excel, dan teks, dengan OCR berbasis vision untuk PDF hasil scan.",
-        "Pemecahan teks (chunking) rekursif, embedding vektor dengan fallback otomatis ke Ollama lokal.",
-        "Pencarian hybrid: kemiripan vektor (HNSW cosine) dikombinasikan dengan pencocokan kata kunci.",
-        "Isolasi pengetahuan ketat per proyek dan jawaban hanya berdasarkan konteks dokumen.",
-        "Antarmuka desktop modern dengan dashboard, unggah drag-and-drop, dan playground chatbot."
+        "Desktop lintas platform dengan backend Go + Wails v3 dan frontend Vue 3 + TypeScript + Vite.",
+        "Isolasi knowledge base per project: dokumen, persona, dan pengaturan retrieval tersimpan terpisah.",
+        "Upload PDF/MD/TXT/DOC/DOCX maks 50 MB dengan dedup SHA-256, lalu training dengan chunking Docling dan embedding.",
+        "Playground chat streaming dengan sources, retrieved chunks, dan panel debug, plus Evaluation untuk mengukur answer match dan source match.",
+        "Retrieval: pencarian vektor HNSW cosine, hybrid keyword + vektor, rerank, dan guardrail.",
+        "Setup stack lokal sekali klik lewat Docker Compose (PostgreSQL + Docling) dengan preset dan health dashboard.",
+        "Autentikasi admin dan sub-user read-only (project di-plot), serta mode guest untuk mencoba demo tanpa backend.",
+        "Kredensial disimpan di OS keyring (fallback file terenkripsi), password di-hash bcrypt, rilis dengan checksum SHA256 dan tanda tangan GPG."
       ]
     },
     {
